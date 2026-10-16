@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vault Heist: Overworld (play money)</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+<h1>Vault Heist</h1>
+<p class="sub">Overworld edition. Play money only, no wallet, no real stakes.</p>
+<div class="bar"><span class="pill" id="coins">20 coins</span><span class="pill" id="near">Nearest vault: ?</span></div>
+<div class="wrap"><canvas id="c" aria-label="Game world. Move with arrow keys or WASD."></canvas><div id="dlg" role="status" aria-live="polite"></div></div>
+<div class="row">
+<div id="pad" aria-label="Touch controls"><button class="u" data-k="ArrowUp" aria-label="Up">&#9650;</button><button data-k="ArrowLeft" style="grid-row:2" aria-label="Left">&#9664;</button><button data-k="ArrowDown" style="grid-row:2" aria-label="Down">&#9660;</button><button data-k="ArrowRight" style="grid-row:2" aria-label="Right">&#9654;</button></div>
+<button id="bA">Talk (Space)</button><button id="bE">Scan (E, 3 coins)</button><button id="bN">New world</button>
+</div>
+<p class="hint">Walk freely with arrows or WASD. Space talks to the guide. E scans nearby ground for hidden traps. Vaults sit inside walled compounds, some "vaults" are mirrors, and geese honk.</p>
+</main>
+<script src="js/config.js"></script>
+<script src="js/render.js"></script>
+<script src="js/world.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
